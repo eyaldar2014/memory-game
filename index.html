@@ -12,10 +12,23 @@
 </head>
 
 <body>
-  <!-- <div id="landingPage">
+  <div id="landing">
     <h1>Landing Page</h1>
-  </div> -->
 
+    <div id="start">
+      <button class="btn" onclick="createCardCouple(1)">easy</button>
+      <button class="btn" onclick="createCardCouple(5)">not easy</button>
+      <button class="btn" onclick="createCardCouple(10)">hard</button>
+      <!-- <button class="btn"></button> -->
+    </div>
+  </div>
+
+  <div id="hiddenTextBox">
+    <h3>Its a record!</h3>
+    <div id="batata"></div>
+    <input id="championName" type="text" value="enter your name">
+    <button id="championBtn" class="btn" onclick="applyRecord()">Click Here to Send</button>
+  </div>
 
 
 
@@ -28,6 +41,15 @@
       </div>
       <div id="timer">
         <h3>Timer</h3>
+        <div id="clock">
+          <div id="minutes">00</div>
+          <p>:</p>
+          <div id="seconds">00</div>
+        </div>
+      </div>
+      <div id="bestScore">
+        <h3>Best Score</h3>
+        <div id="champion">0</div>
       </div>
     </div>
     <div id="cardsContainer">

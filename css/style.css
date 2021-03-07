@@ -6,8 +6,11 @@
 
 body{
   background-color: red;
+  position: relative;
 }
 
+
+/* game ------------------------------------------------------------------------*/
 #game{
   display: flex;
   width: 100vw;
@@ -34,6 +37,7 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
+  position: relative;
 }
 
 .pic{
@@ -60,4 +64,37 @@ body{
 
 #count{
   /* a */
+}
+
+#clock{
+  display: flex;
+  justify-content: center;
+}
+
+.youWon{
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background-color: chartreuse;
+}
+
+
+/* landing ------------------------------------------------------------------------*/
+#landing{
+  position: absolute;
+  background-color: darkblue;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  text-align: center;
+}
+
+#hiddenTextBox{
+  position: absolute;
+  left: 40%;
+  z-index: -100;
+  width: 400px;
+  height: 200px;
+  background-color: yellow;
+  padding: 50px;
 }
